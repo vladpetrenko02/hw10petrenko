@@ -1,0 +1,78 @@
+*::after,
+*::before,
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper{
+    width: 100%;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+ul{
+    max-width: 800px;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.first-drop,
+.second-drop{
+    display: none;
+}
+
+li{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    background-color: black;
+    border: 1px solid rgb(73, 73, 73);
+}
+
+header > ul > li{
+    float: left;
+}
+
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+header > ul > li:nth-child(2){
+    position: relative;
+}
+
+header > ul > li:nth-child(2):hover .first-drop{
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+.first-drop > li:nth-child(2){
+    position: relative;
+}
+
+.first-drop > li:nth-child(2):hover .second-drop{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 1;
+}
