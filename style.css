@@ -44,14 +44,6 @@ li{
     border: 1px solid rgb(73, 73, 73);
 }
 
-.first-drop > li {
-    background: yellow;
-}
-
-.second-drop > li {
-    background: blue;
-}
-
 header > ul > li{
     float: left;
 }
@@ -62,17 +54,13 @@ header > ul > li{
     clear: both;
 }
 
-
-li > a:hover {
-    color: rgb(0, 0, 0);
-}
-
 header > ul > li:nth-child(2){
     position: relative;
 }
 
-header > ul > li:nth-child(2):hover {
-    background: yellow;
+.first-drop li:hover,
+header > ul > li:hover {
+    background: rgb(48, 48, 48);
 }
 
 header > ul > li:nth-child(2):hover .first-drop{
@@ -93,8 +81,4 @@ header > ul > li:nth-child(2):hover .first-drop{
     top: 0;
     left: 100%;
     z-index: 1;
-}
-
-.first-drop > li:nth-child(2):hover {
-    background: blue;
 }
