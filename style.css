@@ -28,6 +28,7 @@ a{
     text-transform: uppercase;
     font-size: 16px;
     letter-spacing: 1px;
+    transition: color .3s;
 }
 
 .first-drop,
@@ -59,6 +60,11 @@ header > ul > li{
     content: '';
     display: block;
     clear: both;
+}
+
+
+li > a:hover {
+    color: rgb(0, 0, 0);
 }
 
 header > ul > li:nth-child(2){
